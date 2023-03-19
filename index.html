@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Perfil de playa</title>
+	<title>Mi Perfil</title>
 	<style>
 		body {
-			background-color: #fff2cc;
-			font-family: Arial, sans-serif;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-		
-		h1 {
-			font-size: 36px;
-			margin: 20px 0 10px;
-		}
-		
-		h2 {
-			font-size: 24px;
-			margin: 10px 0;
-		}
-		
-		p {
-			font-size: 18px;
-			margin: 10px 0;
+			background-image: url('https://source.unsplash.com/random');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 		
 		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			color: white;
+			text-align: center;
+			font-family: Arial, sans-serif;
 		}
-		
-		.profile-pic {
-			float: left;
-			margin-right: 20px;
+
+		img {
 			border-radius: 50%;
-			border: 5px solid #fff;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 			width: 200px;
 			height: 200px;
-			background-image: url('https://via.placeholder.com/200x200.png?text=TU+FOTO');
-			background-size: cover;
-			background-position: center;
+			object-fit: cover;
+			margin-bottom: 30px;
 		}
-		
-		.skills {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 10px 0;
-		}
-		
-		.skill {
-			background-color: #e6f2ff;
-			color: #333;
-			padding: 5px 10px;
-			margin-right: 10px;
+
+		h1 {
+			font-size: 3rem;
 			margin-bottom: 10px;
-			border-radius: 20px;
-			font-weight: bold;
-			font-size: 16px;
 		}
-		
-		.skill:last-child {
-			margin-right: 0;
+
+		p {
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+		}
+
+		button {
+			background-color: white;
+			color: black;
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: black;
+			color: white;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="profile-pic"></div>
-		<h1>Andrés Jaime R. </h1>
+		<img src="playa.jpeg" alt="Tu Foto">
+		<h1>Andrés Jaime R.</h1>
+		<p>18 años | ISSC </p>
+		<button onclick="cambiarFondo()">Presiona el botón :D</button>
 	</div>
-    <img width= "500px" height="500px" src="imagenes/playa.jpeg" alt="playa">
+
+	<script>
+		function cambiarFondo() {
+			var imagenes = [
+				'https://source.unsplash.com/random',
+				'https://source.unsplash.com/1600x900/?nature,water',
+				'https://source.unsplash.com/1600x900/?nature,sky',
+				'https://source.unsplash.com/1600x900/?nature,animals',
+				'https://source.unsplash.com/1600x900/?nature,flowers'
+			];
+			var indice = Math.floor(Math.random() * imagenes.length);
+			document.body.style.backgroundImage = 'url(' + imagenes[indice] + ')';
+		}
+	</script>
 </body>
 </html>
