@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+
     <h1 id="titulo">Este es un texto</h1>
     <p id="texto">Este es un parrafo en html</p>
     <ul id="colores">
@@ -98,7 +99,88 @@
         console.log("Segundo:" + variableLocal);
  
         const PI_ = 3.1416;
- 
+        
+        const autos = ["W", "Seat", "Audi"] //arreglos
+        console.log(autos);
+        console.log(autos[2]);
+        console.log(autos[6]);
+
+        const autoNuevo = {
+            tipo : "Toyota Cmary",
+            modelo : 500,
+            color : "rojo"
+        }
+        console.log(autoNuevo);
+        console.log(autoNuevo.color);
+        autoNuevo.color = "blanco";
+        console.log(autoNuevo.color);
+
+        var x1 = 4.5;
+        console.log(typeof x1);
+
+        var y1 = 10;
+        console.log(typeof y1);
+        
+        var z1 = 'Hola';
+        console.log(typeof z1);
+        
+        console.log(typeof autos);
+        console.log(typeof autoNuevo);
+
+        console.log(5*10);
+        console.log(3 > 10);
+
+        console.log("Thor" > "Iron Man");
+        console.log("a" > "b");
+        console.log("de" > "bc");
+        console.log(true && false);
+        console.log(true && true);
+        console.log(false || true);
+        console.log(true ? 1 : 2);
+        console.log(false ? 1: 2);
+
+        let edad = 18;
+        edad > 20 ? "Verdadero" : "Falso";
+
+        if(edad>20)
+        {
+            console.log("Verdadero");
+        }
+        else{
+            console.log("Falso")
+        }
+
+        console.log(9 * null);
+        console.log("5" - 1);
+        console.log("5" + 1);
+        
+        let valor = 0;
+        while(valor <= 12){
+            console.log(valor);
+            valor = valor + 1;
+            //valor++
+        }
+
+        for(let numero = 0; numero <=12; numero++){
+            console.log("for: " + numero);
+            //console.log("for: "$(numero));
+        }
+
+        for(let actual = 0; actual <= 12; actual++){
+            if (actual % 7 == 0){ //residui. restante de una división
+                console.log("entro porque el residuo es cer" + actual);
+            }
+        }
+
+        var cuenta = 2;
+        cuenta *= 2;
+        console.log(cuenta);
+
+        let x1_ = 5;
+        let y1_ = 2;
+        let z1_ = x1_ % y1_;
+        console.log(z1_);
+
     </script>
 </body>
 </html>
