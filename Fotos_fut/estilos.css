@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(53, 52, 61);
+}
+
+h1, h2, h3, h4, h5{
+    color: white;
+    background-color:  rgb(35, 65, 92);
+    text-align: center;
+    height: 75px;
+    margin: 0;
+    font-family: sans-serif;
+}
+h6{
+    color:whitesmoke;
+    font-family: sans-serif;
+}
+a,img{
+    display: block;
+    margin-left: 20px;
+}
+a{
+    margin: 50px 20px;
+    text-decoration: none;
+    color: rgb(245, 242, 247);  
+}
+a:hover{
+    color: aqua;
+}
+img{
+    width:70%;
+    margin: auto;
+}
